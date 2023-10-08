@@ -1,0 +1,18 @@
+layout {
+	pane split_direction="vertical" {
+		pane command="fx" size="20%"{}
+		pane command="hx"{}
+	}
+	pane split_direction="vertical" size="20%" {
+		pane command="just" {
+			args "tailwind"
+		}
+		pane command="just" {
+			args "dev"
+		}
+	}
+		
+	pane size=1 borderless=true {
+		plugin location="zellij:compact-bar"
+	}
+}
